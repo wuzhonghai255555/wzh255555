@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      id="viewport"
+      name="viewport"
+      content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=yes"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>天坛木业</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/swiper.css" />
+    <link rel="stylesheet" href="./css/wttgz.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <script src="./js/jquery-1.11.1.min.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./public/utils.js"></script>
+  </head>
+  <body>
+    <div class="wttgz">
+      <!-- header -->
+      <div class="warpheader"></div>
+      <!-- header -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide"
+            style="background:url(./images/wttgz/1.jpg)"
+          >
+            <!-- <img src="./images/1.png" alt=""> -->
+          </div>
+          <!-- <div class="swiper-slide" style="background:url(./images/wttgz/2.jpg)"> -->
+          <!-- <img src="./images/2.png" alt=""> -->
+          <!-- </div> -->
+          <!-- <div class="swiper-slide" style="background:url(./images/wttgz/2.jpg)"> -->
+          <!-- <img src="./images/2.png" alt=""> -->
+          <!-- </div> -->
+        </div>
+        <!-- <div class="swiper-button-prev swiper-button-white"></div> -->
+        <!-- <div class="swiper-button-next swiper-button-white"></div> -->
+      </div>
+
+      <div class="tab">
+        <div class="tabCon">
+          <div class="selected">员工理念</div>
+          <div>人才招聘</div>
+          <div>校园招聘</div>
+        </div>
+      </div>
+      <div class="tab1" id="001">
+        <div class="wttgz1 bgfull "></div>
+      </div>
+      <div class="tab2" id="002" style="display:none">
+        <div class="wttgz2 bgfull "></div>
+      </div>
+      <div class="tab3" id="003" style="display:none">
+        <div class="wttgz3 bgfull "></div>
+      </div>
+      <!-- <div class="wttgz6 bgfull"></div> -->
+      <div class="lxwm section pc_listPic"></div>
+    </div>
+  </body>
+  <script>
+    $(function() {
+      window.onhashchange = fn;
+      fn();
+      function fn() {
+        if (window.location.href.split('#')[1] == 001) {
+          $('.tabCon div')
+            .eq(0)
+            .addClass('selected')
+            .siblings()
+            .removeClass('selected');
+          $('.tab1').css('display', 'block');
+          $('.tab2').css('display', 'none');
+          $('.tab3').css('display', 'none');
+        }
+        if (window.location.href.split('#')[1] == 002) {
+          $('.tabCon div')
+            .eq(1)
+            .addClass('selected')
+            .siblings()
+            .removeClass('selected');
+          $('.tab1').css('display', 'none');
+          $('.tab2').css('display', 'block');
+          $('.tab3').css('display', 'none');
+        }
+        if (window.location.href.split('#')[1] == 003) {
+          $('.tabCon div')
+            .eq(2)
+            .addClass('selected')
+            .siblings()
+            .removeClass('selected');
+          $('.tab1').css('display', 'none');
+          $('.tab2').css('display', 'none');
+          $('.tab3').css('display', 'block');
+        }
+      }
+
+      $('.tabCon div').click(function() {
+        $(this)
+          .addClass('selected')
+          .siblings()
+          .removeClass('selected');
+        var index = $(this).index();
+        if (index == 0) {
+          $('.tab1').css('display', 'block');
+          $('.tab2').css('display', 'none');
+          $('.tab3').css('display', 'none');
+        }
+        if (index == 1) {
+          $('.tab1').css('display', 'none');
+          $('.tab2').css('display', 'block');
+          $('.tab3').css('display', 'none');
+        }
+        if (index == 2) {
+          $('.tab1').css('display', 'none');
+          $('.tab2').css('display', 'none');
+          $('.tab3').css('display', 'block');
+        }
+      });
+      var mySwiper = new Swiper('.swiper-container', {
+        // autoplay: true,//可选选项，自动滑动
+        // loop : true,
+        // navigation: {
+        //   nextEl: '.swiper-button-next',
+        //   prevEl: '.swiper-button-prev',
+        // },
+      });
+    });
+  </script>
+</html>

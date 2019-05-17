@@ -1,0 +1,106 @@
+@media screen and (max-width: 960px) {
+  .swiper-container {
+    width: 100%;
+    height: auto;
+  }
+  .blank {
+    height: 0px !important;
+  }
+  .sliderBottom {
+    width: 100%;
+    height: auto;
+    position: static;
+    margin-left: 0px;
+    z-index: 100;
+  }
+  .sliderBottom div:nth-child(1) {
+    float: none;
+    background: url(../images/mobile/3.jpg) no-repeat;
+    background-size: 100%;
+  }
+  .sliderBottom div:nth-child(2) {
+    float: none;
+    background: url(../images/mobile/4.jpg) no-repeat;
+    background-size: 100%;
+  }
+  .sliderBottom div:nth-child(3) {
+    float: none;
+    background: url(../images/mobile/5.jpg) no-repeat;
+    background-size: 100%;
+  }
+  .sliderBottom div {
+    width: 100%;
+    height: 1050px;
+    float:none;
+    /*为伪元素提供定位*/
+    position: relative;
+  }
+  .sliderBottom div img{
+    width: 100%;
+  }
+  .sliderBottom div:hover {
+    /* box-shadow:0px 12px 8px -12px #000;  */
+    /* box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset; */
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0px 60px rgba(0, 0, 0, 0.1) inset; /*多阴影叠加，内外阴影*/
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+      0 0px 60px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+      0 0px 60px rgba(0, 0, 0, 0.1) inset;
+    -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+      0 0px 60px rgba(0, 0, 0, 0.1) inset;
+    -ms-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+      0 0px 60px rgba(0, 0, 0, 0.1) inset;
+  }
+  .sliderBottom div:before {
+    content: '';
+    /*宽高设置，定位*/
+    width: 90%;
+    height: 80%;
+    position: absolute;
+    left: 20px;
+    bottom: 8px;
+    background-color: transparent;
+    /*设置阴影效果*/
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    -o-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    -ms-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    /*层级调整*/
+    z-index: -2;
+  }
+  .sliderBottom div:after {
+    width: 90%;
+    height: 80%;
+    position: absolute;
+  
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    -o-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    -ms-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    z-index: -1;
+  }
+  .mobile_listPic{
+    display: block;
+  }
+  .pc_listPic{
+    display: none;
+  }
+  .ttmy {
+    width: 100%;
+  }
+  
+  .ttwork {
+    width: 100%;
+  }
+  .wdtt {
+    width: 100%;
+  }
+  .shzr {
+    width: 100%;
+  }
+  .cpzx {
+    width: 100%;
+  }
+}

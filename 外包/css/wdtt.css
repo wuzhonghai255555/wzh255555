@@ -1,0 +1,132 @@
+.swiper-container {
+  width: 100%;
+  height: 805px;
+}
+.wdtt1{
+  width: 100%;
+  height: 708px;
+  background: url(../images/wdtt/4.jpg) 0 0 no-repeat
+}
+.wdtt2{
+  width: 100%;
+  height: 1345px;
+  background: url(../images/wdtt/5.jpg) 0 0 no-repeat
+}
+.wdtt3{
+  width: 100%;
+  height: 898px;
+  background: url(../images/wdtt/6.jpg) 0 0 no-repeat
+}
+.wdtt4{
+  width: 100%;
+  height: 899px;
+  background: url(../images/wdtt/7.jpg) 0 0 no-repeat;
+  position: relative;
+}
+.wdtt5{
+  width: 100%;
+  height: 899px;
+  background: url(../images/wdtt/8.jpg) 0 0 no-repeat
+}
+.wdtt6{
+  width: 100%;
+  height: 312px;
+  background: url(../images/wdtt/footer.jpg) 0 0 no-repeat
+}
+.tab{
+  height: 80px;
+  background-color: #e5e5e5;
+  width: 100%;
+}
+
+.tabCon{
+width: 884px;
+height: 80px;
+margin: 0px auto;
+}
+.tabCon div{
+width: 221px;
+height: 80px;
+text-align: center;
+line-height: 80px;
+color: #000;
+font-size: 24px;
+float: left;
+font-weight: bold;
+cursor: pointer;
+}
+.tabCon .selected{
+background:#c09243;
+color: #fff;
+}
+.wdtt_btn{
+  position: absolute;
+  left: 40px;
+  top: 400px;
+  z-index: 104;
+}
+.wdtt_btn img{
+  display: block;
+  width: 336px;
+  height: 106px;
+}
+.nbrk{
+  position: absolute;
+  top: 403px;
+  left: 50%;
+  margin-left: -272px;
+}
+.nbrk div{
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+.nbrk11{
+  width: 545px;
+  height: 73px;
+  background: url(../images/wdtt/rk11.jpg) 0 0 no-repeat;
+}
+.nbrk22{
+  width: 545px;
+  height: 73px;
+  background: url(../images/wdtt/rk22.jpg) 0 0 no-repeat;
+}
+.nbrk33{
+  width: 545px;
+  height: 73px;
+  background: url(../images/wdtt/rk33.jpg) 0 0 no-repeat;
+}
+.nbrk1{
+  width: 545px;
+  height: 73px;
+  background: url(../images/wdtt/rk1.jpg) 0 0 no-repeat;
+}
+
+.nbrk2{
+  width: 545px;
+  height: 73px;
+  background: url(../images/wdtt/rk2.jpg) 0 0 no-repeat;
+}
+
+.nbrk3{
+  width: 545px;
+  height: 73px;
+  background: url(../images/wdtt/rk3.jpg) 0 0 no-repeat;
+}
+
+.wdtt6 .jyjt{
+  display: block;
+  width: 220px;
+  height: 20px;
+  position: absolute;
+  top: 125px;
+  left: 1119px;
+}
+
+.wdtt6 .ttjiaju{
+  display: block;
+  width: 220px;
+  height: 20px;
+  position: absolute;
+  top: 149px;
+  left: 1119px;
+}

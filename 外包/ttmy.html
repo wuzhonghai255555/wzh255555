@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      id="viewport"
+      name="viewport"
+      content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=yes"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>天坛木业</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/ttmy.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <script src="./js/jquery-1.11.1.min.js"></script>
+    <script src="./public/utils.js"></script>
+  </head>
+  <body>
+    <div class="ttmy">
+      <!-- header -->
+      <div class="warpheader"></div>
+      <!-- header -->
+
+      <div class="ttmy1 bgfull"></div>
+      <div class="tab">
+        <div class="tabCon">
+          <div class="selected">公司介绍</div>
+          <div>企业文化</div>
+          <div>企业愿景</div>
+          <div>领导致辞</div>
+        </div>
+      </div>
+      <div class="ttmy2 bgfull" id="001"></div>
+      <div class="ttmy3 bgfull" id="002"></div>
+      <div class="ttmy4 bgfull" id="003"></div>
+      <div class="ttmy5 bgfull" id="004"></div>
+      <div class="lxwm section pc_listPic"></div>
+    </div>
+  </body>
+  <script>
+    $(function() {
+      $('.tabCon div').click(function() {
+        $(this)
+          .addClass('selected')
+          .siblings()
+          .removeClass('selected');
+        var index = $(this).index();
+        if (index == 0) {
+          $(window).scrollTop(886);
+        }
+        if (index == 1) {
+          $(window).scrollTop(2098);
+        }
+        if (index == 2) {
+          $(window).scrollTop(3128);
+        }
+        if (index == 3) {
+          $(window).scrollTop(4600);
+        }
+      });
+    });
+  </script>
+</html>

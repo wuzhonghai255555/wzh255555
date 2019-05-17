@@ -1,0 +1,45 @@
+.ttdt1 {
+  width: 100%;
+  height: 806px;
+  background: url(../images/ttdt/1.jpg) 0 0 no-repeat;
+}
+.ttdt2 {
+  width: 100%;
+  height: 1199px;
+  background: url(../images/ttdt/2.jpg) 0 0 no-repeat;
+}
+.ttdt3 {
+  width: 100%;
+  height: 999px;
+}
+.ttdt3 ul li {
+  width: 66%;
+  list-style: none;
+  margin: 0 auto;
+}
+.ttdt3 ul li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.ttdt3 ul li:nth-child(1) {
+  width: 100%;
+  background: url(../images/ttdt/5.jpg) no-repeat;
+  background-size: 100%;
+  height: 257px;
+}
+.ttdt3 ul li:nth-child(2) {
+  background: url(../images/ttdt/3.jpg) no-repeat;
+  background-size: 100%;
+  height: 354px;
+}
+.ttdt3 ul li:nth-child(3) {
+  background: url(../images/ttdt/4.jpg) no-repeat;
+  background-size: 100%;
+  height: 354px;
+}
+.ttdt6 {
+  width: 100%;
+  height: 312px;
+  background: url(../images/12.jpg) 0 0 no-repeat;
+}

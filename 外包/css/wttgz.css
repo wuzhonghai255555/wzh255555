@@ -1,0 +1,50 @@
+.swiper-container {
+  width: 100%;
+  height: 805px;
+}
+.wttgz1 {
+  width: 100%;
+  height: 1828px;
+  background: url(../images/wttgz/4.jpg) 0 0 no-repeat;
+}
+.wttgz2 {
+  width: 100%;
+  height: 2345px;
+  background: url(../images/wttgz/5.jpg) 0 0 no-repeat;
+}
+.wttgz3 {
+  width: 100%;
+  height: 1326px;
+  background: url(../images/wttgz/6.jpg) 0 0 no-repeat;
+}
+.wttgz6 {
+  width: 100%;
+  height: 312px;
+  background: url(../images/12.jpg) 0 0 no-repeat;
+}
+.tab {
+  height: 80px;
+  background-color: #e5e5e5;
+  width: 100%;
+}
+
+.tabCon {
+  width: 663px;
+  height: 80px;
+  margin: 0px auto;
+}
+.tabCon div {
+  width: 221px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  color: #000;
+  font-size: 24px;
+  float: left;
+  font-weight: bold;
+  cursor: pointer;
+}
+.tabCon .selected {
+  background: #c09243;
+  color: #fff;
+}

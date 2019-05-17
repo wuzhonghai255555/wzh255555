@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      id="viewport"
+      name="viewport"
+      content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=yes"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>天坛木业</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/swiper.css" />
+    <link rel="stylesheet" href="./css/wdtt.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <style>
+      .lxwm .inner .right ul li:nth-child(2) span img,
+      .lxwm .inner .right ul li:nth-child(4) span img {
+        visibility: hidden;
+      }
+      .lxwm .inner .right ul li:nth-child(3) span img {
+        visibility: inherit;
+      }
+    </style>
+    <script src="./js/jquery-1.11.1.min.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./public/utils.js"></script>
+  </head>
+  <body>
+    <div class="wdtt">
+      <!-- header -->
+      <div class="warpheader"></div>
+      <!-- header -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background:url(./images/wdtt/1.jpg)">
+            <!-- <img src="./images/1.png" alt=""> -->
+          </div>
+          <!-- <div class="swiper-slide" style="background:url(./images/wdtt/2.jpg)"> -->
+          <!-- <img src="./images/2.png" alt=""> -->
+          <!-- </div> -->
+          <!-- <div class="swiper-slide" style="background:url(./images/wdtt/2.jpg)"> -->
+          <!-- <img src="./images/2.png" alt=""> -->
+          <!-- </div> -->
+        </div>
+        <!-- <div class="swiper-button-prev swiper-button-white"></div> -->
+        <!-- <div class="swiper-button-next swiper-button-white"></div> -->
+      </div>
+      <!-- <div class="wdtt_btn">
+        <a href="http://60.10.186.106:8081" target="_blank"><img src="./images/wdtt/btn1.png"></a>
+        <img src="./images/wdtt/btn2.png">
+        <img src="./images/wdtt/btn3.png">
+      </div> -->
+
+      <div class="tab">
+        <div class="tabCon">
+          <div class="selected">营销条款与协议</div>
+          <div>营销网络</div>
+          <div>VIP客户</div>
+          <div>内部员工入口</div>
+        </div>
+      </div>
+      <div class="tab1" id="001">
+        <div class="wdtt1 bgfull "></div>
+      </div>
+      <div class="tab2" id="002" style="display:none">
+        <div class="wdtt2 bgfull "></div>
+      </div>
+      <div class="tab3" id="003" style="display:none">
+        <div class="wdtt3 bgfull "></div>
+      </div>
+      <div class="tab4" id="004" style="display:none">
+        <div class="wdtt4 bgfull ">
+          <div class="nbrk">
+            <a href="http://60.10.186.106:8081" target="_blank"
+              ><div class="nbrk11 nbrk1"></div
+            ></a>
+            <div class="nbrk22"></div>
+            <div class="nbrk33"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="tab3" id="003" style="display:none">
+      <a href="http://60.10.186.106:8081" target="_blank"><div class="wdtt5 bgfull "></div></a>
+    </div>
+    <div class="tab4" id="004" style="display:none">
+        <div class="wdtt3 bgfull "></div>
+    </div>
+    <div class="tab5" id="005" style="display:none">
+        <div class="wdtt4 bgfull "></div>
+    </div> -->
+      <div class="lxwm section pc_listPic"></div>
+    </div>
+  </body>
+  <script>
+    $(function() {
+      window.onhashchange = fn;
+      fn();
+      function fn() {
+        if (window.location.href.split('#')[1] == 001) {
+          $('.tabCon div')
+            .eq(0)
+            .addClass('selected')
+            .siblings()
+            .removeClass('selected');
+          $('.tab1').css('display', 'block');
+          $('.tab2').css('display', 'none');
+          $('.tab3').css('display', 'none');
+          $('.tab4').css('display', 'none');
+          // $(".tab5").css("display","none");
+        }
+        if (window.location.href.split('#')[1] == 002) {
+          $('.tabCon div')
+            .eq(1)
+            .addClass('selected')
+            .siblings()
+            .removeClass('selected');
+          $('.tab1').css('display', 'none');
+          $('.tab2').css('display', 'block');
+          $('.tab3').css('display', 'none');
+          $('.tab4').css('display', 'none');
+          // $(".tab5").css("display","none");
+        }
+        if (window.location.href.split('#')[1] == 003) {
+          $('.tabCon div')
+            .eq(2)
+            .addClass('selected')
+            .siblings()
+            .removeClass('selected');
+          $('.tab1').css('display', 'none');
+          $('.tab2').css('display', 'none');
+          $('.tab3').css('display', 'block');
+          $('.tab4').css('display', 'none');
+          // $(".tab5").css("display","none");
+        }
+        if (window.location.href.split('#')[1] == 004) {
+          $('.tabCon div')
+            .eq(3)
+            .addClass('selected')
+            .siblings()
+            .removeClass('selected');
+          $('.tab1').css('display', 'none');
+          $('.tab2').css('display', 'none');
+          $('.tab3').css('display', 'none');
+          $('.tab4').css('display', 'block');
+          // $(".tab5").css("display","none");
+        }
+        // if(window.location.href.split("#")[1] == 005){
+        //   $(".tabCon div").eq(4).addClass('selected').siblings().removeClass("selected");
+        //   $(".tab1").css("display","none");
+        //   $(".tab2").css("display","none");
+        //   $(".tab3").css("display","none");
+        //   $(".tab4").css("display","none");
+        //   $(".tab5").css("display","block");
+        // }
+      }
+
+      $('.tabCon div').click(function() {
+        $(this)
+          .addClass('selected')
+          .siblings()
+          .removeClass('selected');
+        var index = $(this).index();
+        if (index == 0) {
+          $('.tab1').css('display', 'block');
+          $('.tab2').css('display', 'none');
+          $('.tab3').css('display', 'none');
+          $('.tab4').css('display', 'none');
+        }
+        if (index == 1) {
+          $('.tab1').css('display', 'none');
+          $('.tab2').css('display', 'block');
+          $('.tab3').css('display', 'none');
+          $('.tab4').css('display', 'none');
+        }
+        if (index == 2) {
+          $('.tab1').css('display', 'none');
+          $('.tab2').css('display', 'none');
+          $('.tab3').css('display', 'block');
+          $('.tab4').css('display', 'none');
+        }
+        if (index == 3) {
+          $('.tab1').css('display', 'none');
+          $('.tab2').css('display', 'none');
+          $('.tab3').css('display', 'none');
+          $('.tab4').css('display', 'block');
+        }
+      });
+      var mySwiper = new Swiper('.swiper-container', {
+        // autoplay: true,//可选选项，自动滑动
+        // loop : true,
+        // navigation: {
+        //   nextEl: '.swiper-button-next',
+        //   prevEl: '.swiper-button-prev',
+        // },
+      });
+
+      $('.nbrk div').click(function() {
+        var index = $(this).index();
+        var classN = 'nbrk' + (index + 1);
+        $('.nbrk div')
+          .eq(0)
+          .removeClass('nbrk1');
+        $('.nbrk div')
+          .eq(1)
+          .removeClass('nbrk2');
+        $('.nbrk div')
+          .eq(2)
+          .removeClass('nbrk3');
+        $('.nbrk div')
+          .eq(index)
+          .addClass(classN);
+      });
+    });
+  </script>
+</html>
