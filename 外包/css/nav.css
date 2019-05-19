@@ -7,7 +7,7 @@
   left: 50%;
   margin-left: -70px;
   width: 140px;
-  border-top: 2px solid #ff6d01;
+  border-top: 2px solid #be8a30;
   background: #f9f9f9;
   z-index: 1000;
 }
@@ -25,7 +25,7 @@
   overflow: hidden;
   border-width: 6px;
   border-style: dashed dashed solid;
-  border-color: transparent transparent #ff6d01;
+  border-color: transparent transparent #be8a30;
 }
 .mod-header .nav .sub-nav li {
   font-family: Microsoft YaHei;
@@ -39,13 +39,13 @@
   border-top: 1px solid #f1f1f1;
   color: #333;
   text-decoration: none;
-  font-family: 
+  font-family: ;
 }
 
 .mod-header .nav .sub-nav > li > a:hover {
   color: #fff;
-  background: #ff6d01;
-  border-top-color: #ff6d01;
+  background: #be8a30;
+  border-top-color: #be8a30;
 }
 
 .mod-header .nav > .new:after {
@@ -87,6 +87,11 @@
   padding: 0 20px;
   opacity: 0;
   margin-left: 20px;
+}
+.is-fixed.mod-header .logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .is-fixed.mod-header .logo-img {
@@ -132,28 +137,28 @@
   font-family: Microsoft YaHei;
   line-height: 140px;
   opacity: 0;
-  transition: all .4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
-.nav>li:nth-child(1)>a {
-  transition: 0.8s ease-out .3s;
+.nav > li:nth-child(1) > a {
+  transition: 0.8s ease-out 0.3s;
 }
-.nav>li:nth-child(2)>a {
-  transition: 0.8s ease-out .4s;
+.nav > li:nth-child(2) > a {
+  transition: 0.8s ease-out 0.4s;
 }
-.nav>li:nth-child(3)>a {
-  transition: 0.8s ease-out .5s;
+.nav > li:nth-child(3) > a {
+  transition: 0.8s ease-out 0.5s;
 }
-.nav>li:nth-child(4)>a {
-  transition: 0.8s ease-out .6s;
+.nav > li:nth-child(4) > a {
+  transition: 0.8s ease-out 0.6s;
 }
-.nav>li:nth-child(5)>a {
-  transition: 0.8s ease-out .7s;
+.nav > li:nth-child(5) > a {
+  transition: 0.8s ease-out 0.7s;
 }
-.nav>li:nth-child(6)>a {
-  transition: 0.8s ease-out .8s;
+.nav > li:nth-child(6) > a {
+  transition: 0.8s ease-out 0.8s;
 }
-.nav>li:nth-child(7)>a {
-  transition: 0.8s ease-out .9s;
+.nav > li:nth-child(7) > a {
+  transition: 0.8s ease-out 0.9s;
 }
 .ui-arb {
   border-color: #888 transparent transparent;

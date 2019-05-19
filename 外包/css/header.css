@@ -60,7 +60,7 @@ body {
 }
 @media screen and (min-width: 1500px) {
   .title {
-    width: 34%;
+    width: 42%;
     height: 80px;
     float: left;
     margin-left: 4%;
@@ -123,6 +123,12 @@ body {
   opacity: 0;
   margin-top: 50px;
   transition: 0.8s ease-out 1.2s;
+}
+.iphoneCall_l a img {
+  transition: 0.8s ease-out;
+}
+.iphoneCall_l a img:hover {
+  transform: translateY(-5px);
 }
 .iphoneCall_l .weixin {
 }

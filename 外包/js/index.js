@@ -1,11 +1,21 @@
 $(function() {
+  $('.swiper-container').addClass('animation');
   var mySwiper = new Swiper('.swiper-container', {
     autoplay: true, //可选选项，自动滑动
     loop: true,
+    autoplay: {
+      delay: 10000
+    },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
     }
+  });
+
+  var mySwiper1 = new Swiper('.swiper-container1', {
+    // spaceBetween: 20,
+    loop: true,
+    slidesPerView: 1.3
   });
 
   function revealOnScroll() {
@@ -27,4 +37,8 @@ $(function() {
   }
   revealOnScroll();
   $(window).on('scroll', revealOnScroll);
+
+  window.onresize = function() {
+    swiper.update();
+  };
 });

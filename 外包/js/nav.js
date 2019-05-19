@@ -66,6 +66,7 @@ $(function() {
       }, 300);
     }
   );
+  // 导航微信选中
   $('.iphoneCall_l .weixin').hover(
     function() {
       $(this)
@@ -76,6 +77,30 @@ $(function() {
       $(this)
         .find('img:first')
         .attr({ src: './images/weixin.jpg' });
+    }
+  );
+  $('.iphoneCall_l .email').hover(
+    function() {
+      $(this)
+        .find('img:first')
+        .attr({ src: './images/email_select.jpg' });
+    },
+    function() {
+      $(this)
+        .find('img:first')
+        .attr({ src: './images/email.jpg' });
+    }
+  );
+  $('.iphoneCall_l .tel').hover(
+    function() {
+      $(this)
+        .find('img:first')
+        .attr({ src: './images/tel_select.jpg' });
+    },
+    function() {
+      $(this)
+        .find('img:first')
+        .attr({ src: './images/tel.jpg' });
     }
   );
 });
@@ -97,28 +122,28 @@ $(function() {
     }
   });
 });
-setTimeout(function(){
-  $(".logo").animate({
-      "margin-left":"0px",
-      "opacity":"1",
-  }); 
-  $(".search").animate({
-    "margin-top":"0px",
-    "opacity":"1",
-  }); 
-  $(".mod-header .nav > li > a").each(function(){
+setTimeout(function() {
+  $('.logo').animate({
+    'margin-left': '0px',
+    opacity: '1'
+  });
+  $('.search').animate({
+    'margin-top': '0px',
+    opacity: '1'
+  });
+  $('.mod-header .nav > li > a').each(function() {
     $(this).animate({
-      "line-height":"80px",
-      "opacity":"1",
-    })
-  }); 
-  $(".iphoneCall_l a").each(function(){
+      'line-height': '80px',
+      opacity: '1'
+    });
+  });
+  $('.iphoneCall_l a').each(function() {
     $(this).animate({
-      "margin-top":"0px",
-      "opacity":"1",
-    })
-  }); 
-},0);
+      'margin-top': '0px',
+      opacity: '1'
+    });
+  });
+}, 0);
 
 window.getHeight = function() {
   if (window.innerHeight != undefined) {

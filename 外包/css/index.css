@@ -22,13 +22,27 @@
 }
 .swiper-slide .content .center h3 {
   margin-top: 20px;
-  font-size: 50px;
-  font-family: "FZLTZHK--GBK1-0";
+  font-size: 65px;
+  font-family: 'FZLTZHK--GBK1-0';
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: 1s ease-in-out;
+}
+.animation .swiper-slide .content .center h3 {
+  opacity: 1;
+  transform: translateY(0px);
 }
 .swiper-slide .content .center .text {
   margin-top: 20px;
-  font-size: 38px;
-  font-family: "FZLTXIHJW--GB1-";
+  font-size: 30px;
+  font-family: 'FZLTXIHJW--GB1-';
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 1s ease-in-out 0.2s;
+}
+.animation .swiper-slide .content .center .text {
+  opacity: 1;
+  transform: translateY(0px);
 }
 .swiper-slide .content .center .line {
   margin-top: 20px;
@@ -39,7 +53,14 @@
 }
 .swiper-slide .content .center .intro {
   margin-top: 20px;
-  font-size: 44px;
+  font-size: 50px;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 1s ease-in-out 0.5s;
+}
+.animation .swiper-slide .content .center .intro {
+  opacity: 1;
+  transform: translateY(0px);
 }
 .swiper-slide .content .center .more {
   width: 98px;
@@ -47,8 +68,21 @@
   line-height: 32px;
   margin-top: 82px;
   text-align: center;
-  font-size: 15px;
+  font-size: 18px;
   border: 1px #fff solid;
+  transition: 1s ease-out;
+  opacity: 0;
+  transform: translateY(100px);
+}
+.animation .swiper-slide .content .center .more {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.swiper-slide .content .center .more:hover {
+  transform: scale(1.1);
+}
+.swiper-container .swiper-slide-active img {
+  animation: scaleDraw 10s ease-in-out infinite;
 }
 .swiper-slide img {
   width: 100%;
@@ -63,10 +97,14 @@
   display: flex;
   justify-content: center;
 }
-.sliderBottom .single {
-  width: 30%;
-  max-width: 400px;
+.sliderBottom .sing_bc {
   margin-right: 27px;
+}
+.sliderBottom .sing_bc:hover {
+  box-shadow: -0.3px 1px 35px 0px rgba(0, 0, 0, 0.15);
+}
+.sliderBottom .single {
+  max-width: 400px;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -74,16 +112,16 @@
   background-color: #fff;
   padding: 10px;
 }
-.sliderBottom .single:hover {
-  /* box-shadow:0px 12px 8px -12px #000;  */
-  /* box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset; */
-  box-shadow: -0.3px 1px 35px 0px rgba(0, 0, 0, 0.15); /*多阴影叠加，内外阴影*/
-  -webkit-box-shadow: -0.3px 1px 35px 0px rgba(0, 0, 0, 0.15);
+/* .sliderBottom .single:hover { */
+/* box-shadow:0px 12px 8px -12px #000;  */
+/* box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset; */
+/* box-shadow: -0.3px 1px 35px 0px rgba(0, 0, 0, 0.15); /*多阴影叠加，内外阴影*/
+/* -webkit-box-shadow: -0.3px 1px 35px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: -0.3px 1px 35px 0px rgba(0, 0, 0, 0.15);
   -o-box-shadow: -0.3px 1px 35px 0px rgba(0, 0, 0, 0.15);
-  -ms-box-shadow: -0.3px 1px 35px 0px rgba(0, 0, 0, 0.15);
-}
-.sliderBottom .single:before {
+  -ms-box-shadow: -0.3px 1px 35px 0px rgba(0, 0, 0, 0.15); */
+/* } */
+*/ .sliderBottom .single:before {
   content: '';
   /*宽高设置，定位*/
   width: 90%;
@@ -116,29 +154,21 @@
 .sliderBottom .single .pic img {
   width: 100%;
 }
-.sliderBottom .single a{
+.sliderBottom .single {
   opacity: 0;
   transform: translateY(100px);
 }
-.sliderBottom .single:nth-child(1) a {
-  transition: 1s ease-in-out; 
+.sliderBottom .sing_bc:nth-child(1) .single {
+  transition: 1s ease-in-out;
 }
-.sliderBottom .single:nth-child(2) a {
+.sliderBottom .sing_bc:nth-child(2) .single {
   transition: 1s ease-in-out 0.5s;
 }
-.sliderBottom .single:nth-child(3) a {
+.sliderBottom .sing_bc:nth-child(3) .single {
   transition: 1s ease-in-out 1s;
 }
-.animation .single a{
+.animation .single {
   opacity: 1;
-}
-.animation .single:nth-child(1) a {
-  transform: translateY(0px);
-}
-.animation .single:nth-child(2) a {
-  transform: translateY(0px);
-}
-.animation .single:nth-child(3) a {
   transform: translateY(0px);
 }
 .sliderBottom .single .midt {
@@ -167,6 +197,7 @@
 }
 .sliderBottom .single .introduce {
   width: 100%;
+  height: 120px;
   margin-top: 29px;
   font-size: 14px;
   padding: 0 20px;
@@ -225,6 +256,10 @@
   color: #ffffff;
   margin-top: 40px;
   font-size: 40px;
+  transition: 1s ease-in-out;
+}
+.animation .ttmy .left .contain .show_tit .sp_1:hover {
+  transform: translateX(20px);
 }
 .ttmy .left .contain .show_tit .sp_2 {
   color: #ffffff;
@@ -263,7 +298,7 @@
   transition: 0.8s ease-out 0s;
 }
 .ttmy .left .contain .show_pic div img:hover {
-  transform: rotate(180deg);
+  transform: rotate(45deg);
 }
 .ttmy .left .contain .show_pic div:nth-child(1) img {
   width: 59px;
@@ -291,6 +326,7 @@
   transform: translateX(-200px);
   transition: 1s ease-in-out;
 }
+
 .animation .ttmy .left .contain .show_tit {
   opacity: 1;
   transform: translateX(0px);
@@ -328,14 +364,22 @@
   font-size: 14px;
   line-height: 29px;
   margin-bottom: 40px;
+  transform: scale(1);
+  transition: 1s ease-in-out;
+}
+.ttmy .left .contain .more:hover {
+  transform: scale(1.1);
+}
+.ttmy .left .contain .out_more {
   opacity: 0;
   transform: translateX(-200px);
-  transition: 1s ease-in-out 2s;
+  transition: 1s ease-out 2s;
 }
-.animation .ttmy .left .contain .more {
+.animation .ttmy .left .contain .out_more {
   opacity: 1;
   transform: translateX(0px);
 }
+
 .ttmy .right img {
   width: 100%;
   height: 100%;
@@ -367,10 +411,10 @@
 }
 .ttwork div {
   text-align: center;
-  
 }
 .ttwork .contain {
   width: 70%;
+  max-width: 1200px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -419,53 +463,66 @@
   display: block;
 }
 .ttwork .contain .bottom div .s_text {
-  margin-top: 50px;
+  margin-top: 30px;
   font-size: 20px;
   color: #be8a30;
+  transform: translateY(0px);
+  transition: 0.8s ease-in-out;
+}
+.ttwork .contain .bottom div .s_text:hover {
+  transform: translateY(5px);
 }
 .ttwork .contain .bottom div .s_tip {
   margin-top: 14px;
   font-size: 13px;
   color: #898989;
+  transform: translateY(0px);
+  transition: 0.8s ease-in-out;
+}
+.ttwork .contain .bottom div .s_tip:hover {
+  transform: translateY(-5px);
 }
 .ttwork .contain .bottom div img {
-  width: 138px;
+  width: 180px;
   border-radius: 50%;
   transition: 0.8s ease-out 0s;
 }
 .ttwork .contain .bottom div img:hover {
-  transform: rotate(180deg);
+  transform: rotate(45deg);
 }
-.animation .contain .tit {
+.animation .ttwork .contain .tit {
   opacity: 1;
   transform: translateY(0px);
 }
-.animation .contain .translate {
+.animation .ttwork .contain .tit:hover {
+  transform: translateX(20px);
+}
+.animation .ttwork .contain .translate {
   opacity: 1;
   transform: translateY(0px);
 }
-.animation .contain .line {
+.animation .ttwork .contain .line {
   opacity: 1;
   transform: translateY(0px);
 }
-.animation .contain .intro {
+.animation .ttwork .contain .intro {
   opacity: 1;
   transform: translateY(0px);
 }
-.ttwork .contain .bottom div{
+.ttwork .contain .bottom div {
   opacity: 0;
   transform: translateY(100px);
 }
-.ttwork .contain .bottom div:nth-child(1){
+.ttwork .contain .bottom div:nth-child(1) {
   transition: 1s ease-in-out;
 }
-.ttwork .contain .bottom div:nth-child(2){
+.ttwork .contain .bottom div:nth-child(2) {
   transition: 1s ease-in-out 0.5s;
 }
-.ttwork .contain .bottom div:nth-child(3){
+.ttwork .contain .bottom div:nth-child(3) {
   transition: 1s ease-in-out 1s;
 }
-.animation .contain .bottom div{
+.animation .contain .bottom div {
   opacity: 1;
   transform: translateY(0px);
 }
@@ -529,6 +586,11 @@
   font-size: 40px;
   color: #be8a30;
   margin-top: 85px;
+  transform: translateX(0px);
+  transition: 1s ease-in-out;
+}
+.animation .shzr .right .top .tit:hover {
+  transform: translateX(20px);
 }
 .shzr .right .top .s_tip {
   letter-spacing: 0.8px;
@@ -568,11 +630,23 @@
 .shzr .right .bttom .single h2 {
   color: #be8a30;
   font-size: 18px;
+  font-weight: normal;
+  transform: translateY(0px);
+  transition: 1s ease-in-out;
+}
+.animation .shzr .right .bttom .single h2:hover {
+  transform: translateY(3px);
 }
 .shzr .right .bttom .single .tip {
   margin-top: 10px;
   color: #b5b5b6;
   font-size: 15px;
+  transform: translateY(0px);
+  transition: 1s ease-in-out;
+  cursor: pointer;
+}
+.animation .shzr .right .bttom .single .tip:hover {
+  transform: translateY(-3px);
 }
 .shzr .right .bttom .single .text {
   margin-top: 22px;
@@ -597,7 +671,6 @@
   width: 52%;
   margin-right: 8%;
   margin-bottom: 80px;
-  
 }
 
 .wdtt .left .contain .top .tit {
@@ -612,13 +685,16 @@
   opacity: 1;
   transform: translateX(0px);
 }
+.animation .wdtt .left .contain .top .tit:hover {
+  transform: translateX(20px);
+}
 .wdtt .left .contain .top .tip {
   font-size: 20px;
   color: #9fa0a0;
   margin-top: 5px;
   opacity: 0;
   transform: translateX(-200px);
-  transition: 1s ease-in-out 0.5s;
+  transition: 1s ease-in-out 0.2s;
 }
 .animation .wdtt .left .contain .top .tip {
   opacity: 1;
@@ -631,7 +707,7 @@
   margin-top: 20px;
   opacity: 0;
   transform: translateX(-200px);
-  transition: 1s ease-in-out 1s;
+  transition: 1s ease-in-out 0.5s;
 }
 .animation .wdtt .left .contain .top .line {
   opacity: 1;
@@ -639,33 +715,34 @@
 }
 .wdtt .left .contain .top .text {
   color: #717070;
-  font-size: 17px;
+  font-size: 14px;
   margin-top: 46px;
   text-indent: 2em;
+  line-height: 25px;
   opacity: 0;
   transform: translateX(-200px);
-  transition: 1s ease-in-out 1.5s;
+  transition: 1s ease-in-out 0.8s;
 }
 .animation .wdtt .left .contain .top .text {
   opacity: 1;
   transform: translateX(0px);
 }
 .wdtt .left .contain .bottom {
-  margin-top: 94px;
+  margin-top: 64px;
 }
 .wdtt .left .contain .bottom .single {
   margin-top: 40px;
   opacity: 0;
   transform: translateX(-200px);
 }
-.wdtt .left .contain .bottom .single:nth-child(1){
-  transition: 1s ease-in-out 2s;
+.wdtt .left .contain .bottom .single:nth-child(1) {
+  transition: 1s ease-in-out 1.2s;
 }
-.wdtt .left .contain .bottom .single:nth-child(2){
-  transition: 1s ease-in-out 2.5s;
+.wdtt .left .contain .bottom .single:nth-child(2) {
+  transition: 1s ease-in-out 1.4s;
 }
-.wdtt .left .contain .bottom .single:nth-child(3){
-  transition: 1s ease-in-out 3s;
+.wdtt .left .contain .bottom .single:nth-child(3) {
+  transition: 1s ease-in-out 1.6s;
 }
 .animation .wdtt .left .contain .bottom .single {
   opacity: 1;
@@ -674,6 +751,10 @@
 .wdtt .left .contain .bottom .single .tit {
   color: #be8a30;
   font-size: 25px;
+  transition: 1s ease-out;
+}
+.animation .wdtt .left .contain .bottom .single .tit:hover {
+  transform: translateX(20px);
 }
 .wdtt .left .contain .bottom .single .tip {
   color: #b5b5b6;
@@ -682,16 +763,25 @@
 }
 .wdtt .right {
   width: 50%;
-  height: 100%;
-  position: absolute;
-  right: 0px;
-  top: 0px;
+  overflow: hidden;
 }
 .wdtt .right img {
   width: 100%;
   height: 100%;
 }
-
+.swiper-container1 .swiper-slide-next {
+  opacity: 0.2 !important;
+}
+.swiper-container1 {
+  height: 100%;
+  opacity: 0;
+  transform: translateX(200px);
+  transition: 1s ease-in-out;
+}
+.animation .swiper-container1 {
+  opacity: 1;
+  transform: translateX(0px);
+}
 .cpzx {
   width: 100%;
   display: flex;
@@ -729,6 +819,10 @@
 }
 .cpzx .contain .top .tit {
   font-size: 40px;
+  transition: 0.8s ease-out;
+}
+.animation .cpzx .contain .top .tit:hover {
+  transform: translateX(5px);
 }
 .cpzx .contain .top .trans {
   font-size: 20px;
@@ -783,13 +877,19 @@
   transition: 0.8s ease-out 0s;
 }
 .cpzx .contain .bottom .single .pic img:hover {
-  transform: rotate(180deg);
+  transform: rotate(45deg);
 }
 .cpzx .contain .bottom .single .text {
   color: #ffffff;
   text-align: center;
   margin-top: 29px;
   font-size: 20px;
+  transform: translateY(5px);
+  transition: 0.8s ease-out;
+}
+.animation .cpzx .contain .bottom .single .text:hover {
+  opacity: 1;
+  transform: translateY(0px);
 }
 .cpzx .contain .bottom .single .line {
   width: 49px;
@@ -805,4 +905,17 @@
   color: #ffffff;
   margin-top: 28px;
   line-height: 23px;
+}
+
+@keyframes scaleDraw {
+  /*定义关键帧、scaleDrew是需要绑定到选择器的关键帧名称*/
+  0% {
+    transform: scale(1); /*开始为原始大小*/
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
