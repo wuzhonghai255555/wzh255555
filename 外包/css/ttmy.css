@@ -1,57 +1,179 @@
-
-.ttmy1{
+.ttmy1 {
   width: 100%;
   height: 806px;
-  background: url(../images/ttmy/01.jpg) 0 0 no-repeat
+  background: url(../images/ttmy/01.jpg) 0 0 no-repeat;
 }
-.ttmy2{
-  width: 100%;
+.ttmy2 {
+  width: 90%;
   height: 1212px;
-  background: url(../images/ttmy/02.jpg) 0 0 no-repeat
 }
-.ttmy3{
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.box .title {
+  width: auto;
+  margin-top: 129px;
+  height: 0px;
+  float: none;
+  margin-left: 0;
+  line-height: 0px;
+  color: #be8a30;
+  font-size: 36px;
+}
+.box .sub_title {
+  margin-top: 23px;
+  font-size: 30px;
+}
+.box .line {
+  width: 50px;
+  height: 3px;
+  background-color: #c0c0c0;
+  margin-top: 33px;
+}
+.ttmy2 .content {
+  width: 90%;
+  display: flex;
+  position: relative;
+  margin-top: 91px;
+  display: flex;
+  justify-content: flex-end;
+}
+.ttmy2 .content .pic {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+}
+.ttmy2 .content img {
+  width: 100%;
+  height: 100%;
+}
+.ttmy2 .content .text {
+  width: 50%;
+}
+.ttmy2 .content .text p {
+  line-height: 30px;
+  text-indent: 2em;
+}
+.ttmy3 {
   width: 100%;
   height: 1120px;
-  background: url(../images/ttmy/03.jpg) 0 0 no-repeat
 }
-.ttmy4{
+.ttmy3 .content {
+  width: 100%;
+  background-color: grey;
+  margin-top: 59px;
+}
+.ttmy3 .content .middle {
+  width: 70%;
+  height: 764px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.ttmy3 .content .middle .single {
+  width: 364px;
+  height: 354px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.09);
+  opacity: 0.66;
+}
+.ttmy3 .content .middle .single .tip {
+  width: 132px;
+  height: 33px;
+  background-color: #be8a30;
+  text-align: center;
+  line-height: 33px;
+  color: #fff;
+  margin-top: 23px;
+  margin-bottom: 33px;
+}
+.ttmy4 {
   width: 100%;
   height: 1174px;
-  background: url(../images/ttmy/04.jpg) 0 0 no-repeat
 }
-.ttmy5{
+.ttmy4 .content {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 90px;
+}
+.ttmy4 .content p {
+  text-indent: 2em;
+}
+.ttmy4 .content .pic {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 90px;
+}
+.ttmy4 .content .pic img {
+  width: 100%;
+  height: 100%;
+}
+.ttmy5 {
   width: 100%;
   height: 1458px;
-  background: url(../images/ttmy/05.jpg) 0 0 no-repeat
 }
-.ttmy6{
+.ttmy5 .content {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 94px;
+}
+.ttmy5 .content .tit {
+  font-size: 24px;
+  color: #073190;
+  margin-bottom: 33px;
+}
+.ttmy5 .content p {
+  text-indent: 2em;
+  line-height: 30px;
+}
+.ttmy5 .content .loca {
+  display: flex;
+}
+.ttmy5 .content .loca .text {
+  width: 50%;
+}
+.ttmy5 .content .loca .pic {
+  width: 50%;
+}
+.ttmy5 .content .loca .pic img {
+  width: 100%;
+  height: 100%;
+}
+.ttmy6 {
   width: 100%;
   height: 312px;
-  background: url(../images/12.jpg) 0 0 no-repeat
+  background: url(../images/12.jpg) 0 0 no-repeat;
 }
-.tab{
+.tab {
   height: 80px;
   background-color: #e5e5e5;
   width: 100%;
 }
 
-.tabCon{
-width: 884px;
-height: 80px;
-margin: 0px auto;
+.tabCon {
+  width: 884px;
+  height: 80px;
+  margin: 0px auto;
 }
-.tabCon div{
-width: 221px;
-height: 80px;
-text-align: center;
-line-height: 80px;
-color: #000;
-font-size: 24px;
-float: left;
-font-weight: bold;
-cursor: pointer;
+.tabCon div {
+  width: 221px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  color: #000;
+  font-size: 24px;
+  float: left;
+  font-weight: bold;
+  cursor: pointer;
 }
-.tabCon .selected{
-background:#c09243;
-color: #fff;
+.tabCon .selected {
+  background: #c09243;
+  color: #fff;
 }

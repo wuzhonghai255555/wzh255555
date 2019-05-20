@@ -107,19 +107,13 @@ $(function() {
 
 $(function() {
   $(window).scroll(function() {
-    var h = $('body').height() - window.getHeight();
-    //console.log(h);
-    if ($(window).scrollTop() > 28 && h > 120) {
-      $('.mod-header')
-        .addClass('is-fixed')
-        .find('.logo-txt')
-        .fadeOut(400);
-    } else if ($(window).scrollTop() < 28) {
-      $('.mod-header')
-        .removeClass('is-fixed')
-        .find('.logo-txt')
-        .fadeIn(400);
-    }
+    $(".header_con").css({
+      "width": "100%",
+      "height": "80px",
+      "display": "flex",
+      "justify-content": "center",
+      "align-items": "center",
+    });
   });
 });
 setTimeout(function() {

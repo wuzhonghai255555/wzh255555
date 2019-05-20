@@ -39,6 +39,6 @@ $(function() {
   $(window).on('scroll', revealOnScroll);
 
   window.onresize = function() {
-    swiper.update();
+    mySwiper.update();
   };
 });

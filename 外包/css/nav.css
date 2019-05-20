@@ -39,7 +39,6 @@
   border-top: 1px solid #f1f1f1;
   color: #333;
   text-decoration: none;
-  font-family: ;
 }
 
 .mod-header .nav .sub-nav > li > a:hover {
@@ -81,6 +80,7 @@
   background-color: rgba(255, 255, 255, 1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   z-index: 105;
+  transform: translateZ(0);
 }
 
 .is-fixed.mod-header .logo {

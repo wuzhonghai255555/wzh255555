@@ -5,6 +5,8 @@ header
 html,
 body {
   font-family: 'Microsoft YaHei';
+  background-image:url(about:blank);  /* for IE6 */   
+  background-attachment:fixed;  /*必须*/
 }
 
 .warpheader {
@@ -34,6 +36,11 @@ body {
   background-size: 100% 100%;
   opacity: 0;
   margin-left: -20px;
+}
+.logo a{
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .title {
