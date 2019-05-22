@@ -31,31 +31,236 @@
 
 .cpzx2 {
   width: 100%;
-  height: 998px;
-  background: url(../images/cpzx/3.jpg) 0 0 no-repeat;
 }
 .cpzx3 {
   width: 100%;
-  height: 900px;
-  background: url(../images/cpzx/4.jpg) 0 0 no-repeat;
 }
 .cpzx4 {
   width: 100%;
-  height: 1502px;
-  background: url(../images/cpzx/5.jpg) 0 0 no-repeat;
 }
 .cpzx5 {
   width: 100%;
-  height: 1537px;
-  background: url(../images/cpzx/6.jpg) 0 0 no-repeat;
 }
 .cpzx7 {
   width: 100%;
-  height: 1720px;
-  background: url(../images/cpzx/7.jpg) 0 0 no-repeat;
 }
 .cpzx6 {
   width: 100%;
-  height: 312px;
-  background: url(../images/12.jpg) 0 0 no-repeat;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 238px;
+}
+.box .title {
+  width: auto;
+  margin-top: 129px;
+  height: auto;
+  float: none;
+  margin-left: 0;
+  line-height: initial;
+  color: #be8a30;
+  font-size: 36px;
+}
+.box .sub_title {
+  margin-top: 23px;
+  font-size: 30px;
+}
+.box .line {
+  width: 50px;
+  height: 3px;
+  background-color: #c0c0c0;
+  margin-top: 33px;
+}
+.box .content {
+  width: 70%;
+  max-width: 1243px;
+  display: flex;
+  margin-top: 94px;
+}
+.cpzx4 .content {
+  display: flex;
+  flex-direction: column;
+}
+.box .content .midium-l {
+  width: 60%;
+}
+.box .content .midium-r {
+  width: 40%;
+}
+.box .content .midium-r img {
+  width: 100%;
+  height: 100%;
+}
+.box .content .midium-l h3 {
+  font-size: 30px;
+  letter-spacing: 0px;
+  color: #000000;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.box .content .midium-l .tit {
+  font-size: 20px;
+  color: #595757;
+  margin-bottom: 10px;
+}
+.box .content .midium-l .con p {
+  font-size: 16px;
+  color: #727062;
+  line-height: 26px;
+  margin-bottom: 5px;
+}
+.cpzx4 .content .first {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+}
+.cpzx4 .content .second {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+.cpzx4 .content .first .l {
+  width: 70%;
+}
+.cpzx4 .content .first .l .intro {
+  width: 60%;
+  height: 85px;
+  text-align: center;
+  line-height: 85px;
+  border: solid 1px #d2d2d2;
+  margin-bottom: 42px;
+  margin-top: 67px;
+}
+.cpzx4 .content .first .l .con {
+  margin-bottom: 10px;
+}
+.cpzx4 .content .first .l .con .label {
+  font-size: 20px;
+  color: #595757;
+}
+.cpzx4 .content .first .l .con .tet {
+  font-size: 15px;
+  color: #595757;
+}
+.cpzx4 .content .first .l .en_tip {
+  font-size: 15px;
+  color: #717070;
+}
+.cpzx4 .content .first .r {
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 40%;
+}
+.cpzx4 .content .first .r img {
+  width: 100%;
+  height: 100%;
+}
+.cpzx4 .content .second .l {
+  width: 30%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.cpzx4 .content .second .r {
+  width: 70%;
+}
+.cpzx4 .content .second .r .tip {
+  font-size: 20px;
+  color: #595757;
+}
+.cpzx4 .content .second .r .con {
+  font-size: 15px;
+  color: #717070;
+}
+.cpzx4 .content .second .l img {
+  width: 100%;
+  height: 100%;
+}
+.cpzx4 .content .third .head {
+  width: 483px;
+  height: 85px;
+  border: solid 1px #d2d2d2;
+  line-height: 85px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.cpzx4 .content .third .con {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.cpzx4 .content .third .con .single {
+  width: 45%;
+  margin-bottom: 59px;
+}
+.cpzx4 .content .third .con .single .tit span {
+  font-family: 'E-HX';
+  font-size: 60px;
+  line-height: 23.8px;
+  color: #a9a9a9;
+  font-style: italic;
+}
+.cpzx4 .content .third .con .single .line {
+  width: 100%;
+  height: 1px;
+  background-color: #d2d2d2;
+  margin-top: 13px;
+  margin-bottom: 19px;
+}
+.cpzx4 .content .third .con .single p {
+  font-size: 15px;
+  line-height: 26px;
+  color: #717070;
+  text-align: justify;
+}
+.cpzx4 .content .forth {
+  display: flex;
+  background-color: #ededed;
+  position: relative;
+}
+.cpzx4 .content .forth .left,
+.cpzx4 .content .forth .right {
+  width: 50%;
+}
+.cpzx4 .content .forth .left .head {
+  width: 80%;
+  height: 85px;
+  text-align: center;
+  line-height: 85px;
+  border: solid 1px #d2d2d2;
+  margin: 0 auto;
+  margin-bottom: 42px;
+  margin-top: 67px;
+}
+.cpzx4 .content .forth .left .text {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 106px;
+}
+.cpzx4 .content .forth .left .text .tit {
+  font-size: 20px;
+  line-height: 22.8px;
+  color: #595757;
+}
+.cpzx4 .content .forth .left .text p {
+  font-size: 15px;
+  color: #717070;
+  line-height: 26px;
+}
+.cpzx4 .content .forth .right {
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.cpzx4 .content .forth .right img {
+  width: 100%;
+  height: 100%;
 }
